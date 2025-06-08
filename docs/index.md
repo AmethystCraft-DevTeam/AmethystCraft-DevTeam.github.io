@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "AmethystCraft"
   text: "紫水晶"
-  tagline: 服务器介绍&文档
+  tagline: mc.amethyst.icu
   image: 
     src: ./icon.png
     alt: "AmethystCraftLogo"
@@ -25,5 +25,11 @@ features:
     icon: 💰
     details: Latest 3.7.4
     link: "/plugins/TradeSystem.md"
+  - title: IC消息互联
+    icon: 📨
+    details: 让服务器中的玩家可以与其他服务器中的玩家进行聊天, 目前6个服务器已接入（插件版本不一致会出现异常），合作请联系组织
+    link: "/plugins/InterConnect.md"
 ---
 <DataPanel />
+
+<PartnerCarousel />

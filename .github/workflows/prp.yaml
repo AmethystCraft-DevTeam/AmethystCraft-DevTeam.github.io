@@ -37,6 +37,9 @@ jobs:
             labels : 'Pull Request'
 
       - name : Comment on the pull request with issue link 
+        env:
+            GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run : |
             ISSUE_URL="${{ steps.create_issue.outputs.issue_url }}"
+            gh auth login --with-token <<< "${GH_TOKEN}"
             gh pr comment "${{ github.event.pull_request.number }}" --body="相关的Issue已创建：[$ISSUE_URL]($ISSUE_URL)"
