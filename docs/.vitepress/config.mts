@@ -3,14 +3,15 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "AmethystCraft",
-  description: "紫水晶-一个商业的可开挂的服务器",
+  description: "紫水晶-一个无政府服务器",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '主页', link: '/' },
       { text: '开始', link: '/guide/index.md' },
       { text: '插件文档', items: [
-        { text: "TradeSystem", link: "/plugins/TradeSystem.md"}
+        { text: "TradeSystem", link: "/plugins/TradeSystem.md"},
+        { text: "InterConnect", link: "/plugins/InterConnect.md"}
       ]},
       { text: '团队', link: "/team/index.md"}
     ],
@@ -30,6 +31,7 @@ export default defineConfig({
           text: '插件',
           items: [
             { text: 'TradeSystem', link: '/plugins/TradeSystem.md' },
+            { text: "InterConnect", link: "/plugins/InterConnect.md"}
           ]
         }
       ]
